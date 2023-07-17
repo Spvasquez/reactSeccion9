@@ -7,7 +7,6 @@ export const MultipleCustomHooks = () => {
     const {counter,increment}=useCounter(1);
     const{data,isLoading,hasError}=useFetch(`https://thesimpsonsquoteapi.glitch.me/quotes?count=${counter}`)
     const {character,quote}=!!data&&data[0];
-    console.log(data)
   return (
     <>
     <h1>The simpsons Quotes</h1>
